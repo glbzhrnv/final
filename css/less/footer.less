@@ -1,0 +1,53 @@
+.footer {
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .navigation {
+           .links {
+               margin-left: 60px;
+               text-decoration: none;
+               color: @text-color;
+               font-family: "Avenir-Next", sans-serif;
+               font-style: normal;
+               font-weight: 600;
+               font-size: 14px;
+           } 
+        }
+    }
+
+    &-bottom {
+        display: flex;
+        margin-top: 31px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        padding-bottom: 30px;
+        img {
+           vertical-align: middle; 
+           margin-right: 8px;
+        }
+        .description {
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            margin-right: 51px;
+        }
+        a {
+            text-decoration: none;
+            color: @text-color;
+
+        }
+        
+    }
+
+    .copy {
+        font-family: "Avenir-Next";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 15px;
+        text-align: right;
+        opacity: 0.2;
+        padding: 10px 0;
+    }
+}
