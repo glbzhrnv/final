@@ -48,7 +48,18 @@
   max-width: 100%;
 }
 body {
-  background: #E5E5E5;
+  background: #f9fdff;
+}
+.header {
+  position: relative;
+}
+.header .background {
+  width: 524px;
+  height: 751px;
+  position: absolute;
+  background: #FCEAE8;
+  z-index: -1;
+  right: -95px;
 }
 .header-top {
   display: -webkit-box;
@@ -72,6 +83,10 @@ body {
   line-height: 19px;
   text-transform: uppercase;
 }
+.header-link:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
 .header-wrapper {
   margin-left: auto;
 }
@@ -80,6 +95,10 @@ body {
 }
 .header-search {
   margin-right: 22px;
+  cursor: pointer;
+}
+.header-basket {
+  cursor: pointer;
 }
 .header-bottom {
   display: -webkit-box;
@@ -141,6 +160,7 @@ body {
 }
 .header-slider {
   margin-left: auto;
+  text-align: right;
 }
 .header-slider .items {
   font-family: "PlayfairDisplay", sans-serif;
@@ -150,6 +170,7 @@ body {
   color: rgba(0, 0, 0, 0.3);
   margin-bottom: 20px;
   margin-left: 11px;
+  cursor: pointer;
 }
 .header-slider .active {
   font-family: "PlayfairDisplay", sans-serif;
@@ -218,13 +239,16 @@ body {
 .new-items .left-new:nth-child(-n + 2) {
   margin-bottom: 30px;
 }
+.new-items .left-new:nth-child(1n + 2) {
+  cursor: pointer;
+}
 .new-items .left-new:first-child {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-shadow: none;
           box-shadow: none;
-  background: #E5E5E5;
+  background: #f9fdff;
 }
 .new-items .left-new:last-child {
   background: #FAECE9;
@@ -235,6 +259,7 @@ body {
   background: #FFFFFF;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  cursor: pointer;
 }
 .new-items .right .description {
   line-height: 38px;
@@ -254,6 +279,7 @@ body {
 .section {
   width: 825px;
   margin: 50px auto;
+  margin-top: 102px;
 }
 .section .review-block {
   display: -webkit-box;
@@ -457,6 +483,9 @@ body {
 .lastchance .items .item .image {
   text-align: right;
 }
+.lastchance .items .item .image img {
+  margin-bottom: -4px;
+}
 .lastchance .items .item .price {
   font-family: "OpenSans", sans-serif;
   font-weight: 600;
@@ -505,6 +534,10 @@ body {
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
+}
+.footer-top .navigation .links:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 .footer-bottom {
   display: -webkit-box;

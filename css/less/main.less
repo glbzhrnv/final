@@ -39,10 +39,14 @@
                 margin-bottom: 30px;
             }
 
+            &:nth-child(1n + 2) {
+                cursor: pointer;
+            }
+
             &:first-child {
                 justify-content: center;
                 box-shadow: none;
-                background: #E5E5E5;
+                background: rgba(249, 253, 255, 1);
             }
 
             &:last-child {
@@ -56,6 +60,7 @@
         width: 570px;
         background: #FFFFFF;
         flex-shrink: 0;
+        cursor: pointer;
 
         .description {
             line-height: 38px;
@@ -83,6 +88,7 @@
 .section {
     width: 825px;
     margin: 50px auto;
+    margin-top: 102px;
 
     .review-block {
         display: flex;
@@ -289,7 +295,11 @@
 
             .image {
                 text-align: right;
+                img {
+                    margin-bottom: -4px;
+                }
             }
+
 
             .price {
                 font-family: "OpenSans", sans-serif;
